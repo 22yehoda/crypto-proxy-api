@@ -1,0 +1,10 @@
+{
+  "01 - אתרי חדשות קריפטו": [
+    ["שם", "קישור", "שפה", "חשיבות", "הערות"],
+    ["CoinDesk", "https://www.coindesk.com/", "אנגלית", 5, "חדשות קריפטו גלובלי"],
+    ["Cointelegraph", "https://cointelegraph.com/", "אנגלית", 5, "סיקור בינלאומי"],
+    ["Decrypt", "https://decrypt.co/", "אנגלית", 5, "כתבות ופרשנויות"],
+    ["The Block", "https://www.theblock.co/", "אנגלית", 5, "מחקר וחדשות שוק"],
+    ["CryptoSlate", "https://cryptoslate.com/", "אנגלית", 5, "דוחות וניתוחים"]
+  ]
+}
