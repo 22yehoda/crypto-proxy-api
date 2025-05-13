@@ -1,0 +1,57 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Crypto Proxy API",
+    "version": "1.0.0",
+    "description": "Proxy API to expose public crypto sources and Kraken holdings for GPT actions"
+  },
+  "servers": [
+    {
+      "url": "https://crypto-proxy-api-rbr3.onrender.com",
+      "description": "Live deployed proxy API"
+    }
+  ],
+  "paths": {
+    "/api/public-sources": {
+      "get": {
+        "operationId": "getPublicCryptoSources",
+        "summary": "משיכת מקורות ציבוריים מה-API של המשתמש",
+        "responses": {
+          "200": {
+            "description": "Success - JSON list of public sources",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "additionalProperties": true
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/holdings": {
+      "get": {
+        "operationId": "getHoldingsFromKraken",
+        "summary": "משיכת רשימת מטבעות מוחזקים מקרקן",
+        "responses": {
+          "200": {
+            "description": "Success - JSON list of held assets",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "additionalProperties": true
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {}
+  }
+}
